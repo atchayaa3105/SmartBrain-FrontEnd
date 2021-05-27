@@ -26,7 +26,7 @@ class Register extends React.Component{
     if(!this.state.email || !this.state.password || !this.state.name){
     window.alert('Sorry! The required fields cannot be blank.')
     }else{
-      fetch('http://localhost:3000/register', {
+      fetch('http://damp-journey-51447.herokuapp.com/register', {
       method:'post',
       headers:{'Content-Type':'application/json'},
       body: JSON.stringify({

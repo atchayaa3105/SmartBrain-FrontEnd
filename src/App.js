@@ -93,7 +93,7 @@ class App extends Component {
     if(!this.state.input) {
       window.alert('Oops! Nothing can be detected.')
     }else {
-        fetch('http://localhost:3000/imageurl',{
+        fetch('http://damp-journey-51447.herokuapp.com/imageurl',{
           method:'post',
           headers:{'Content-Type':'application/json'},
           body: JSON.stringify({
@@ -105,7 +105,7 @@ class App extends Component {
           if(response === 'error with API'){
             window.alert('Not a valid URL')
           }else{
-            fetch('http://localhost:3000/image',{
+            fetch('http://damp-journey-51447.herokuapp.com/image',{
                 method:'put',
                 headers:{'Content-Type':'application/json'},
                 body: JSON.stringify({

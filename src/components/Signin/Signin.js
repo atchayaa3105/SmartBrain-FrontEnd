@@ -22,7 +22,7 @@ class Signin extends React.Component {
   if(!this.state.signInEmail || !this.state.signInPassword){
     window.alert('Sorry! The required fields cannot be empty.')
   }else{
-        fetch('http://localhost:3000/signin', {
+        fetch('http://damp-journey-51447.herokuapp.com/signin', {
         method:'post',
         headers:{'Content-Type':'application/json'},
         body: JSON.stringify({
